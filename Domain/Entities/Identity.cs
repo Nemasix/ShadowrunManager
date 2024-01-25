@@ -11,15 +11,15 @@ namespace Domain.Entities
     /// </summary>
     public class Identity : BaseEntity
     {
-        public string Name { get; set; }
-        public string Nationality { get; set; }
-        public string Birthplace { get; set; }
-        public string FamilyStatus { get; set; }
-        public string Dependents { get; set; }
-        public IdentityStatus Status { get; set; }
-        public int Indice { get; set; }
-        public string Informations { get; set; }
-        public List<string> Licenses { get; set; }
-        public Lifestyle Lifestyle { get; set; }
+        public required string Name { get; set; }
+        public string? Nationality { get; set; }
+        public string? Birthplace { get; set; }
+        public string? FamilyStatus { get; set; }
+        public string? Dependents { get; set; }
+        public IdentityStatus? Status { get; set; }
+        public int? Indice { get; set; }
+        public string? Informations { get; set; }
+        public List<string>? Licenses { get; set; }
+        public Lifestyle? Lifestyle { get; set; }
     }
 }
